@@ -26,15 +26,15 @@ Whatap(웹 콘솔)에서 운영 지표를 **Selenium으로 자동 수집**하고
 ---
 
 ## Flow / Architecture
-(Cron / Scheduler). 
-│. 
-▼. 
-Python Script. 
-├─ Selenium: Whatap 로그인(ID/PW + OTP). 
-├─ Crawl: APM / Infra Report / Network Metrics 수집. 
-├─ Stats: 평균/최대 계산. 
-├─ GSheet: 템플릿 복제 → 범위 초기화 → 셀 업데이트. 
-└─ Webhook: 결과 요약/에러 알림 전송. 
+(Cron / Scheduler)  
+│ 
+▼  
+Python Script  
+├─ Selenium: Whatap 로그인(ID/PW + OTP)  
+├─ Crawl: APM / Infra Report / Network Metrics 수집  
+├─ Stats: 평균/최대 계산  
+├─ GSheet: 템플릿 복제 → 범위 초기화 → 셀 업데이트  
+└─ Webhook: 결과 요약/에러 알림 전송  
 
 ---
 
